@@ -162,8 +162,10 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  {{page.humandate}}.
+  8:45 am {{page.humandate}}.
   {% include workshop_calendar.html %}
+  <br/>
+  The workshop lesson material starts at 9am sharp. <b>Please arrive 15 minutes beforehand</b> to allow time for setting up your laptop and downloading the lesson data.
 </p>
 {% endif %}
 
@@ -283,6 +285,12 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 <hr/>
 {% endif %}
 
+<h2 id="setup">Setup</h2>
+  <p>
+  Download the <a href="{{page.root}}/data/shell-lesson-data.zip">shell-lesson-data.zip</a> file and extract it to your <tt>/working/[lab_head]/[user]</tt> directory on the HPC.
+  </p>
+<hr/>
+
 {% comment %}
 SCHEDULE
 
@@ -305,9 +313,9 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
+{% comment %}
 <h2 id="schedule">Schedule</h2>
 
-{% comment %}
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -320,10 +328,12 @@ Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list 
 {% endif %}
 
 Edit/replace the text above if you want to include a schedule table.
+{% include custom-schedule.html %}
 See the contents of the _includes/custom-schedule.html file for an example of
 how one of these schedule tables is constructed.
 {% endcomment %}
-{% include custom-schedule.html %}
+
+{% include syllabus.html %}
 
 
 <hr/>
