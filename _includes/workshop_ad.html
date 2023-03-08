@@ -37,12 +37,14 @@
           to be announced.
           {% endif %}
           </p>
+{% comment %}
           {% if page.helper %}
           <p>
           <strong>Helpers:</strong>
           {{page.helper | join: ', ' %}}
           </p>
           {% endif %}
+{% endcomment %}
         </div>
       </div>
     </div>
