@@ -277,11 +277,13 @@ Edit the text to match who can attend the workshop. For instance:
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
     This workshop is open to students and staff of QIMR Berghofer MRI.
-    We assume no previous knowledge of the tools presented. In fact
-    as seating and instructor resources are limited, if you think you're
+{% comment %}
+    We assume no previous knowledge of the tools presented.
+    In fact as seating and instructor resources are limited, if you think you're
     less of a beginner and more just in need of a refresher, please consider
     working through the lessons independently as an alternative to
     signing up for the workshop.
+{% endcomment %}
 </p>
 
 <hr/>
