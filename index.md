@@ -191,7 +191,7 @@ Modify the block below if there are any special requirements.
             For personal laptops, please install this yourself.
          </li>
          <li>
-            For Institute laptops, please contact ITS and request them to install it.
+            For Institute laptops, please contact ITS and request them to install it via <a href="https://service.qimr.edu.au/userui/software_detail.php?ID=119">the software downloads page in the ticket system</a>.
          </li>
       </ul>
     </li>
