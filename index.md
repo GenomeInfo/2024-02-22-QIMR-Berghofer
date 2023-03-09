@@ -164,8 +164,7 @@ This block displays the date and links to Google Calendar.
   <strong>When:</strong>
   8:45 am {{page.humandate}}.
   {% include workshop_calendar.html %}
-  <br/>
-  The workshop lesson material starts at 9am sharp. <b>Please arrive 15 minutes beforehand</b> to allow time for setting up your laptop and downloading the lesson data.
+  The workshop lesson material starts at 9am sharp; <b>please arrive 15 minutes beforehand</b> to allow time for setting up your laptop and downloading the lesson data.
 </p>
 {% endif %}
 
@@ -179,7 +178,25 @@ Modify the block below if there are any special requirements.
   <ul>
     <li>Participants must bring a laptop with a
       Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
-      They are also required to abide by
+      ITS has a limited number of training laptops available if you don't have
+      your own; let the organizers know if you need one of these and they will
+      be allocated on a first-come, first-served basis.
+    </li>
+    <li>
+    If you'll be using Windows, you need the Git BASH
+    emulator installed with <a href="https://gitforwindows.org/">Git for Windows</a>.
+    Assuming you don't have it installed already:
+      <ul>
+         <li>
+            For personal laptops, please install this yourself.
+         </li>
+         <li>
+            For Institute laptops, please contact ITS and request them to install it.
+         </li>
+      </ul>
+    </li>
+    <li>
+      Participants are required to abide by
       {% if page.carpentry == "swc" %}
       Software Carpentry's
       {% elsif page.carpentry == "dc" %}
@@ -188,15 +205,6 @@ Modify the block below if there are any special requirements.
       Library Carpentry's
       {% endif %}
     <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
-    </li>
-    <li>
-      An account on the Institute's HPC environment.
-    </li>
-    <li>
-    If using your own laptop with the QIMR-Guest or eduroam wireless networks, you must contact <a href='https://staff.qimr.edu.au/form/itjob'>ITS</a> to ensure you have working access to the QIMR VPN.
-    </li> 
-    <li>
-      An ssh client to connect to the HPC. On Linux and Mac, this will already be present as in the base install. Windows users can use MobaXterm located in <tt>L:\Joint_Projects\HPCUsers\MobaXTerm</tt>.
     </li>
   </ul>
 </p>
@@ -269,6 +277,11 @@ Edit the text to match who can attend the workshop. For instance:
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
     This workshop is open to students and staff of QIMR Berghofer MRI.
+    We assume no previous knowledge of the tools presented. As seating
+    and instructor resources are limited, if you think you're less of
+    a beginner and more just in need of a refresher, kindly consider
+    working through the lessons independently as an alternative to
+    signing up for the workshop.
 </p>
 
 <hr/>
@@ -287,7 +300,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 
 <h2 id="setup">Setup</h2>
   <p>
-  Download the <a href="{{page.root}}/data/shell-lesson-data.zip">shell-lesson-data.zip</a> file and extract it to your <tt>/working/[lab_head]/[user]</tt> directory on the HPC.
+  Download the <a href="{{page.root}}/data/shell-lesson-data.zip">shell-lesson-data.zip</a> file and extract it to your desktop.
   </p>
 <hr/>
 
