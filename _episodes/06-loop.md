@@ -671,8 +671,8 @@ it produces one line of output every five seconds or so:
 
 ~~~
 NENE01729A.txt
-NENE01729B.txt
 NENE01736A.txt
+NENE01751A.txt
 ...
 ~~~
 {: .output}
